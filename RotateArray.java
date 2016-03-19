@@ -6,18 +6,32 @@ public class RotateArray {
 	{
 		int a[]={1, 2, 3, 4, 5, 6, 7};
 		int d=2;
-		int count=0;
-		int tmp=a[0];
-		int i=0;
-		while(count<a.length-1)
+
+
+		for(int j=0;j<gcd(a.length,d);j++)
 		{
-			a[i]=a[(i+d)%a.length];
-			i=(i+d)%a.length;
-			count++;
+			int i=j;
+			int tmp=a[i];
+			while(true)
+			{
+				a[i]=a[(i+d)%a.length];
+				i=(i+d)%a.length;
+				if((i+d)%a.length==j)
+				{
+					a[i]=tmp; 
+					break;
+				}
+			}
 		}
-		a[i]=tmp;
-		
 		for(int j:a) System.out.print(j+"\t");
+	}
+	static int gcd(int a, int b)
+	{
+
+		if(b==0)
+			return a;
+		else
+			return gcd(b, a%b);
 	}
 
 }
