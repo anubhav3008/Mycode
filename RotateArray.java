@@ -1,4 +1,4 @@
-package com;
+
 
 public class RotateArray {
 
@@ -54,3 +54,4 @@ public class RotateArray {
        is at its final place, so recur on pieces of A.
 
 2 Finally when A and B are of equal size, block swap them.
+*/

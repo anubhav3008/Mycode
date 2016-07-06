@@ -1,4 +1,4 @@
-package com;
+
 //Moore voting algorthm 
 //http://www.geeksforgeeks.org/majority-element/
 public class MajorityElelemnt {

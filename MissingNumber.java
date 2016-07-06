@@ -1,4 +1,4 @@
-package com;
+
 //print missing number that lye in the range of 0 to 99
 public class MissingNumber {
 

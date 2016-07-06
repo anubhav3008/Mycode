@@ -1,4 +1,4 @@
-package com;
+
 import java.lang.Math;
 //find the minimam distance between any two given numbers in an array
 public class MinimamDistance {
